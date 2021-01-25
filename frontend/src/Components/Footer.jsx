@@ -14,7 +14,7 @@ function Footer() {
         />
         <p className="lead">
           <small className="font-weight-light">
-            &copy; 2020 Recode Pro · Projeto Prático React Básico · E-commerce
+            &copy; 2021 Recode Pro · Projeto Prático React + Redux · E-commerce
             by Gabi Vespoli
           </small>
         </p>

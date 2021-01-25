@@ -28,15 +28,15 @@ function Produtos() {
     }
   }
 
-  function aumentaImg(event) {
-    const img = event.target;
-    img.style.width = "240px";
-  }
+  // function aumentaImg(event) {
+  //   const img = event.target;
+  //   img.style.width = "240px";
+  // }
 
-  function diminuiImg(event) {
-    const img = event.target;
-    img.style.width = "120px";
-  }
+  // function diminuiImg(event) {
+  //   const img = event.target;
+  //   img.style.width = "120px";
+  // }
 
   // Retirando as categorias repetidas
   const categoria = produtos.map((categoria) => {
@@ -121,18 +121,18 @@ function Produtos() {
                   >
                     <img
                       src={produto.imagem}
-                      alt="Geladeira Eletrolux"
-                      onMouseEnter={aumentaImg}
-                      onMouseOut={diminuiImg}
+                      alt={produto.descricao}
+                      // onMouseEnter={aumentaImg}
+                      // onMouseOut={diminuiImg}
                     />
                     <br />
-                    <p className="descricao">{produto.descricao}</p>
+                    <h6><p className="descricao">{produto.descricao}</p></h6>
                     <hr />
                     <p className="preco_antigo pt-2">
-                      <s>{produto.preco_antigo.toFixed(2)}</s>
+                      <s>R$ {produto.preco_antigo.toFixed(2)}</s>
                     </p>
                     <p className="preco_atual text-danger">
-                      <strong>R$ {produto.preco.toFixed(2)}</strong>
+                      <h5><strong>R$ {produto.preco.toFixed(2)}</strong></h5>
                     </p>
                     <button
                       type="button"
